@@ -1,1 +1,84 @@
 @import '~normalize.css';
+@import 'variables.scss';
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.secondary__btn {
+  border: 1px solid rgba(29, 37, 60, 0.2);
+  background: transparent;
+  padding: 13px 31px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background: var(--color-button-hover);
+    color: var(--color-text-button-hover);
+  }
+}
+.primary-btn {
+  border: 1px solid rgba(29, 37, 60, 0.2);
+  background: var(--color-button);
+  color: var(--color-text-button-hover);
+  text-transform: uppercase;
+  padding: 21px 39.7px 20px 29px;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background: var(--color-button-hover);
+  }
+  &::after {
+    content: url('../images/arrow.svg');
+    margin-left: 12px;
+    width: 29px;
+    height: 10px;
+  }
+}
+.primary-link {
+  border: 0;
+  background: transparent;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-link);
+  text-decoration: none;
+  &::after {
+    content: url('../images/arrow_link.svg');
+    margin-left: 12px;
+    width: 29px;
+    height: 10px;
+  }
+}
+.h3title {
+  color: var(--color-button);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+.h2title {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 52px;
+  color: var(--color-text);
+}
+.h1title {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 52px;
+  color: var(--color-text);
+}
+@import 'common/header.scss';
+
+/*main_page*/
+@import './sections/main_page/banner.scss';
+@import './sections/main_page/secure.scss';
+@import './sections/main_page/technology.scss';
+@import './sections/main_page/safe.scss';
+/*main_page*/

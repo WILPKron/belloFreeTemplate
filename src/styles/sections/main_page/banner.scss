@@ -1,0 +1,38 @@
+.banner {
+  &__container {
+    position: relative;
+    padding-top: 223px;
+    padding-left: 106px;
+    padding-bottom: 196px;
+  }
+  &__subtitle {
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0;
+  }
+  &__descr {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    max-width: 411px;
+    color: var(--color-description);
+  }
+  &__title {
+    margin: 0;
+    font-size: 64px;
+    line-height: 68px;
+    max-width: 451px;
+    text-transform: capitalize;
+  }
+  &__img {
+    position: absolute;
+    top: 17px;
+    right: 0;
+    width: 984px;
+    height: 100%;
+    background: url('../images/hero_1.png') center/contain no-repeat;
+    @media screen and (max-width: 1440px) {
+      width: 70vw;
+    }
+  }
+}

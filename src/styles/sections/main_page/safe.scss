@@ -1,0 +1,60 @@
+.safe {
+  background-color: var(--background-main);
+  &__container {
+    position: relative;
+    text-align: center;
+    padding: 91px 170px 85px;
+    &::before {
+      position: absolute;
+      content: url('../images/umbrella.png');
+      left: 50%;
+      top: -110px;
+      transform: translateX(-50%);
+    }
+  }
+  &__subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 43px;
+    line-height: 52px;
+  }
+  &__descr {
+    font-size: 19px;
+    line-height: 30px;
+    max-width: 1077px;
+    margin: 0 auto;
+  }
+  &__blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    grid-gap: 70px;
+    padding-left: 0;
+    margin: 0;
+    margin-top: 42px;
+  }
+  &-block {
+    min-height: 310px;
+    padding: 72px 63px 70px;
+    background-color: var(--background-white);
+    &__title {
+      font-size: 24px;
+      line-height: 26px;
+      color: var(--color-text);
+    }
+    &__descr {
+      font-size: 12px;
+      line-height: 26px;
+      color: var(--color-text-descr);
+      &--grey {
+        color: var(--color-text);
+        text-decoration-line: underline;
+      }
+    }
+  }
+}

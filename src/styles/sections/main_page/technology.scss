@@ -1,0 +1,44 @@
+.technology {
+  &__container {
+    display: flex;
+    padding: 148px 170px 164px;
+    align-items: center;
+  }
+  &__subtitle {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 52px;
+  }
+  &__descr {
+    font-size: 19px;
+    line-height: 30px;
+    max-width: 483px;
+    margin-right: 75px;
+  }
+  &-img {
+    position: relative;
+    &__pointers {
+      position: absolute;
+      top: -34px;
+      left: -44px;
+      z-index: -1;
+    }
+    &__descr {
+      box-shadow: 3px 4px 34px rgba(66, 71, 77, 0.11);
+      background-color: var(--color-text-in-dart);
+      border-radius: 5px;
+      position: absolute;
+      bottom: -25px;
+      left: -60px;
+      z-index: 2;
+      padding: 20px 25px;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+}
