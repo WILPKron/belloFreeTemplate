@@ -1,31 +1,40 @@
 .secure {
   background-color: var(--background-grey-block);
-  // min-height: 300px;
   &__container {
     display: flex;
-    padding: 85px 170px 84px;
+    padding: 85px 170px 77px;
   }
   &__content {
     padding-top: 82.6px;
+  }
+  &__subtitle {
+    margin-bottom: 26px;
   }
   &__title {
     max-width: 470px;
     font-weight: 600;
     font-size: 44px;
     line-height: 52px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  &__content {
+    transform: translateX(12px);
   }
   &__descr {
     max-width: 470px;
     font-size: 19px;
     line-height: 30px;
     color: var(--color-text-descr);
+    margin-bottom: 31px;
   }
   &__img {
-    padding-right: 144px;
+    padding-right: 132px;
   }
   &-img {
     &__descr {
-      padding-top: 20px;
+      padding-top: 22px;
+      transform: translateX(-2px);
     }
     &__star {
       color: var(--color-button);

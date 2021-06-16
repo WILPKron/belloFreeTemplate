@@ -1,0 +1,72 @@
+.works {
+  position: relative;
+  text-align: center;
+  background-color: var(--background-dark-block);
+  &__container {
+    padding-top: 115px;
+    padding-bottom: 101px;
+  }
+  &__content {
+    position: relative;
+    margin-bottom: 33px;
+    &::before {
+      content: url('../images/lonework.png');
+      position: absolute;
+      right: 0;
+      top: -150px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 26px;
+  }
+  &__title {
+    margin-bottom: 16px;
+    color: var(--color-text-in-dart);
+  }
+  &__descr {
+    font-size: 19px;
+    line-height: 30px;
+    color: var(--color-text-descr-in-dark);
+    margin-bottom: 65px;
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    padding: 0 176px;
+    &__item {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+    }
+    &__item--position1 {
+      transform: translateX(-4px);
+    }
+    &__item--position2 {
+      transform: translate(-7px, -6px);
+    }
+    &__item--position3 {
+      transform: translate(3px, -3px);
+    }
+    &__title {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 22px;
+      color: var(--color-text-in-dart);
+      margin-bottom: 6px;
+    }
+    &__descr {
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--color-text-descr-in-dark);
+    }
+  }
+  &__btn {
+    padding: 20px 38.2px 20px 26.9px;
+    &::after {
+      margin-left: 2px;
+    }
+  }
+}

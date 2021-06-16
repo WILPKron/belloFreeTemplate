@@ -3,13 +3,20 @@
   &__container {
     position: relative;
     text-align: center;
-    padding: 91px 170px 85px;
+    padding: 92px 182px 83px 170px;
     &::before {
       position: absolute;
       content: url('../images/umbrella.png');
-      left: 50%;
-      top: -110px;
-      transform: translateX(-50%);
+      left: 49.9%;
+      top: -109px;
+      transform: translateX(-51%);
+    }
+    &::after {
+      position: absolute;
+      content: url('../images/dogsafe.png');
+      right: 6px;
+      bottom: -35px;
+      z-index: 1;
     }
   }
   &__subtitle {
@@ -17,11 +24,13 @@
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
+    margin-bottom: 30px;
   }
   &__title {
     font-weight: 500;
     font-size: 43px;
     line-height: 52px;
+    margin-bottom: 38px;
   }
   &__descr {
     font-size: 19px;
@@ -40,12 +49,23 @@
   }
   &-block {
     min-height: 310px;
-    padding: 72px 63px 70px;
+    padding: 153px 34px 20px 29px;
     background-color: var(--background-white);
+    position: relative;
     &__title {
       font-size: 24px;
       line-height: 26px;
+      margin-top: 0;
       color: var(--color-text);
+      margin-bottom: 5px;
+    }
+    &__img {
+      margin: 0 auto;
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      /*display: none;*/
     }
     &__descr {
       font-size: 12px;

@@ -7,7 +7,7 @@
   }
   &__subtitle {
     font-size: 18px;
-    line-height: 27px;
+    line-height: 32px;
     margin: 0;
   }
   &__descr {
@@ -16,23 +16,26 @@
     line-height: 33px;
     max-width: 411px;
     color: var(--color-description);
+    margin-bottom: 40px;
   }
   &__title {
     margin: 0;
     font-size: 64px;
-    line-height: 68px;
+    line-height: 67px;
     max-width: 451px;
     text-transform: capitalize;
+    margin-bottom: 26px;
   }
   &__img {
     position: absolute;
-    top: 17px;
-    right: 0;
+    top: -21px;
+    right: 4px;
     width: 984px;
     height: 100%;
     background: url('../images/hero_1.png') center/contain no-repeat;
+    transform: translateX(3px);
     @media screen and (max-width: 1440px) {
-      width: 70vw;
+      width: 68.3vw;
     }
   }
 }
