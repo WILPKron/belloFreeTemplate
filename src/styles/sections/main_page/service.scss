@@ -2,7 +2,8 @@
   &__container {
     padding-left: 170px;
     padding-right: 170px;
-    padding-top: 160px;
+    padding-top: 162px;
+    padding-bottom: 133px;
   }
   &-list {
     padding-left: 0;
@@ -12,12 +13,39 @@
     grid-gap: 20px;
     &__item {
       background-color: rgba(169, 216, 255, 0.3);
+      color: #7cafdd;
       padding-left: 22px;
-      padding-top: 42px;
+      padding-top: 41px;
+      height: 323px;
+      position: relative;
+      &:nth-child(2) {
+        background-color: rgba(255, 174, 104, 0.3);
+        color: #e79751;
+      }
+      &:nth-child(3) {
+        background-color: rgba(250, 82, 64, 0.3);
+        color: #fa5240;
+      }
+      &:nth-child(4) {
+        background-color: rgba(18, 111, 133, 0.3);
+        color: #126f85;
+      }
+    }
+    &__link {
+      position: absolute;
+      bottom: 33px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: inherit;
+      &::after {
+        color: inherit;
+        margin-left: 7px;
+      }
     }
     &__title {
       margin: 0;
-      color: #7cafdd;
+      color: inherit;
       font-weight: 600;
       font-size: 34px;
       line-height: 42px;

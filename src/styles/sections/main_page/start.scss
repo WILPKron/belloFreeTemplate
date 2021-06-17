@@ -1,0 +1,38 @@
+.start {
+  &__container {
+    background-color: var(--background-blud-block);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 107px;
+    padding-bottom: 83px;
+    position: relative;
+    &::after {
+      content: url('../images/umbrella_and_human.png');
+      position: absolute;
+      top: -64px;
+      left: 64px;
+    }
+    &::before {
+      content: url('../images/human_and_coffe.png');
+      position: absolute;
+      right: 252px;
+      bottom: -4px;
+    }
+  }
+  &__title {
+    margin-bottom: 9px;
+  }
+  &__descr {
+    font-size: 19px;
+    line-height: 30px;
+    margin-bottom: 39px;
+  }
+  &__btn {
+    font-family: 'Roboto', sans-serif;
+    padding: 21px 32px 21px;
+    &::after {
+      margin-left: 6px;
+    }
+  }
+}
