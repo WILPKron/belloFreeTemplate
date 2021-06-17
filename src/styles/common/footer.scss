@@ -1,0 +1,17 @@
+.footer {
+  background-color: #f8f8f8;
+  &__container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 171px 17px 171px;
+    font-family: 'Roboto', sans-serif;
+  }
+  &-btns {
+    &__btn {
+      padding-left: 31px;
+      padding-right: 36px;
+    }
+  }
+}
