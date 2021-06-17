@@ -3,6 +3,13 @@
     display: flex;
     padding: 146px 164px 178px;
     align-items: center;
+    @media screen and (max-width: 1300px) {
+      flex-direction: column;
+      padding: 146px 50px 178px;
+    }
+    @media screen and (max-width: 750px) {
+      padding: 50px 10px 50px;
+    }
   }
   &__subtitle {
     font-size: 14px;
@@ -14,6 +21,11 @@
     font-size: 45px;
     line-height: 52px;
     margin-bottom: 38px;
+  }
+  &__content {
+    @media screen and (max-width: 1300px) {
+      margin-bottom: 100px;
+    }
   }
   &__descr {
     font-size: 19px;

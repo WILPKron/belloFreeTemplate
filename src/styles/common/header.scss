@@ -8,9 +8,15 @@
     display: flex;
     align-items: center;
     padding: 28px 60px;
+    @media screen and (max-width: 830px) {
+      justify-content: center;
+    }
   }
   &__nav {
     margin-right: auto;
+    @media screen and (max-width: 830px) {
+      display: none;
+    }
   }
   &__list {
     display: flex;
@@ -35,6 +41,9 @@
     }
   }
   &-btns {
+    @media screen and (max-width: 830px) {
+      display: none;
+    }
     &__login {
       border: 0;
       background: transparent;

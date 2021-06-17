@@ -4,6 +4,9 @@
     padding-top: 223px;
     padding-left: 106px;
     padding-bottom: 196px;
+    @media screen and (max-width: 750px) {
+      padding: 50px 10px 50px;
+    }
   }
   &__subtitle {
     font-size: 18px;

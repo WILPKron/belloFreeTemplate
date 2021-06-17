@@ -4,6 +4,13 @@
     display: flex;
     padding: 151px 0 160px 171px;
     align-items: center;
+    @media screen and (max-width: 1300px) {
+      padding: 151px 50px 160px 50px;
+      flex-direction: column;
+    }
+    @media screen and (max-width: 750px) {
+      padding: 50px 10px 50px;
+    }
   }
   &__subtitle {
     font-size: 14px;
@@ -31,6 +38,10 @@
     position: relative;
     margin-right: 80px;
     flex: 0.9 0;
+    @media screen and (max-width: 1300px) {
+      margin-right: 0;
+      margin-bottom: 70px;
+    }
     &__pointers {
       position: absolute;
       top: -37px;

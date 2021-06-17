@@ -12,12 +12,18 @@
       position: absolute;
       top: -64px;
       left: 64px;
+      @media screen and (max-width: 600px) {
+        content: '';
+      }
     }
     &::before {
       content: url('../images/human_and_coffe.png');
       position: absolute;
       right: 252px;
       bottom: -4px;
+      @media screen and (max-width: 600px) {
+        content: '';
+      }
     }
   }
   &__title {

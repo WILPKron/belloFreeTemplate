@@ -2,9 +2,17 @@
   &__container {
     padding: 75px 0 36px 170px;
     display: flex;
+    @media screen and (max-width: 1300px) {
+      padding: 75px 0 36px 0;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &-from {
     flex: 1 0 0;
+    @media screen and (max-width: 1300px) {
+      margin-bottom: 70px;
+    }
     &__logo {
       margin-bottom: 33px;
     }

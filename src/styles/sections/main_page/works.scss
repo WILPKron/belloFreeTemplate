@@ -5,6 +5,9 @@
   &__container {
     padding-top: 115px;
     padding-bottom: 101px;
+    @media screen and (max-width: 750px) {
+      padding: 50px 10px 50px;
+    }
   }
   &__content {
     position: relative;
@@ -34,6 +37,13 @@
     grid-template-columns: repeat(3, 1fr);
     list-style: none;
     padding: 0 176px;
+    @media screen and (max-width: 1300px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 60px;
+    }
+    @media screen and (max-width: 750px) {
+      padding: 0;
+    }
     &__item {
       display: flex;
       justify-content: flex-start;
